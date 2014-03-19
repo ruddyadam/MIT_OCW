@@ -77,10 +77,12 @@ def ex18():
     #ex 1.8
 
     #part 1
+    print "\nPart 1: 1/n, where n is integers 1-10"
     for n in range(1,11):
         print 1.0/n
 
     #part 2
+    print "\nPart 2: Countdown"
     user_input = raw_input('Input to countdown from: ')
     if user_input.isdigit():
         user_input = int(user_input)
@@ -91,9 +93,21 @@ def ex18():
     else:
         print "invalid input... program will now restart"
 
+    #part 3
+    print "\nPart 3: Base - Exponent Calcultor"
+    base = input("give a number for the base: ")
+    exp = input("give a number for the exponent: ")
+    print str(base)+"^"+str(exp),"=", base**exp
 
+    #part 4
+    print "\nPart 4: Divisible by 2"
+    number = input("Enter an integer: ")
+    if number % 2 == 0:
+        print "I LOVE YOU!"
+    else:
+        print "I HATE YOU!"
 
-ex17()
+ex18()
                 
             
     
